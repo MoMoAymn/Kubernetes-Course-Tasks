@@ -26,7 +26,7 @@ docker build -t webapp-mysql:task2 ./mysql
 minikube image load webapp-api:task2
 minikube image load webapp-mysql:task2
 
-# 2-7. Apply the manifests in order
+# 2-7. Apply the yaml files in order
 kubectl apply -f 02-namespace.yaml
 kubectl apply -f 03-secret.yaml
 kubectl apply -f 04-configmap.yaml
